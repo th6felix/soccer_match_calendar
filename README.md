@@ -1,6 +1,7 @@
 <div align="center">
   <h1 align="center"> Calendário dos jogos de futebol </h1>
   <p> Automação para coletar dados sobre jogos de futebol em site esportivo, tratar essas informações e adicionar aos eventos do Google Calendar. </p>
+
   <br>
 </div>
 
@@ -51,4 +52,8 @@ Essa automação realiza os seguintes passos:
     - Abra o "Agendador de Tarefas" no Windows.
     - Crie uma nova tarefa para rodar o script Python automaticamente
     - Configurar "disparadores".
+
+<br>
+
+ <img>![image](https://github.com/user-attachments/assets/3912def4-eb96-417a-b324-6599d11a499d)
 
