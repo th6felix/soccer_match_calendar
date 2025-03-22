@@ -1,57 +1,57 @@
 <div align="center">
-  <h1 align="center"> Calendário dos jogos de futebol </h1>
-  <p> Automação para coletar dados sobre jogos de futebol em site esportivo, tratar essas informações e adicionar aos eventos do Google Calendar. </p>
+  <h1 align="center"> ⚽ Soccer match calendar ⚽ </h1>
+  <p> Automation to collect data on soccer matches on a sports website, process this information and add it to Google Calendar events. </p>
 
   <br>
 </div>
 
 
-## ⚙️ Como Funciona
-Essa automação realiza os seguintes passos:
+## ⚙️ How it works
+This automation performs the following steps:
 
-1. **Coleta de dados**  
-   - Coleta das informações de jogos de futebol no site [Globo Esporte](https://globoesporte.globo.com) para qualquer time durante o ano, com a capacidade de personalizar a busca por diferentes times.
+1. **Data collection**  
+   - Collection of information on soccer matches on the website for any team during the year, with the ability to customize the search for different teams
      
-     #### Tecnologia: Web Scraping (Requests)
+     #### Technology: Web Scraping (Requests)
   
-2. **Tratamento dos Dados**  
-   - Conversão das datas e horários dos jogos para o formato desejado.
-   - Filtro dos jogos do dia.
+2. **Data processing**  
+   - Conversion of match dates and times into the desired format.
+   - Filter the matches of the day.
      
-      #### Tecnologia: Pandas
+      #### Technology: Pandas
     
-3. **Integração com a API**  
-   - Configuração dos dados de acesso à api.
-   - Criação e atualização dos eventos no Google Calendar com os jogos coletados.
+3. **API integration**  
+   - Configuring api access data.
+   - Creating and updating events in Google Calendar with the games collected.
      
-     #### Tecnologia: Google Calendar API
+     #### Technology: Google Calendar API
 
-4. **Execução Automática**  
-   - O script é configurado para rodar automaticamente após 45 minutos quando o PC for ligado
+4. **Automatic execution**  
+   - The script is set to run automatically after 45 minutes when the PC is switched on
    
-     #### Tecnologia: Task Scheduler do Windows
+     #### Technology: Windows Task Scheduler
 
 <br>
 
-## 🛠️ Como Configurar e Adaptar
+## 🛠️ How to configure
 
-1. **Instalar as Dependências**  
+1. **Install the Dependencies**  
    ```bash
    pip install beautifulsoup4 requests google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client pandas
 
-2. **Configurar a Conta de Serviço do Google**
-    - Crie uma conta de serviço no Google Cloud Console.
-    - Baixe as credenciais da conta de serviço e coloque o arquivo JSON na pasta do projeto.
-    - Dê permissões à conta de serviço para adicionar eventos ao seu calendário.
+2. **Set up your Google Service Account**
+    - Create a service account in Google Cloud Console.
+    - Download the service account credentials and place the JSON file in the project folder.
+    - Give the service account permissions to add events to your calendar.
 
-3. **Alterar o Código para Seu Time**
-    - BR: alterar time na url do site fonte
-    - demais: ajustar url e lógica de tratamento
+3. **Change the code for your soccer team**
+    - BR: change time in the url of the source site (Globo Esporte)
+    - other countries: adjust url and processing logic
 
-4. **Configuração do Agendador de Tarefas (Windows)**
-    - Abra o "Agendador de Tarefas" no Windows.
-    - Crie uma nova tarefa para rodar o script Python automaticamente
-    - Configurar "disparadores".
+4. **Configuring the Task Scheduler (Windows)**
+    - Open the “Task Scheduler” in Windows.
+    - Create a new task to run the Python script automatically
+    - Configure “triggers”.
 
 <br>
 
